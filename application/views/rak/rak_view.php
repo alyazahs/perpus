@@ -18,9 +18,9 @@
 					<div class="box box-primary">
 						<div class="box-header with-border">
 							<?php if(!empty($this->input->get('id'))){?>
-							<h4> Edit Rak</h4>
+							<h4> Edit Genre</h4>
 							<?php }else{?>
-							<h4> Tambah Rak</h4>
+							<h4> Tambah Genre</h4>
 							<?php }?>
 						</div>
 						<!-- /.box-header -->
@@ -28,7 +28,7 @@
 							<?php if(!empty($this->input->get('id'))){?>
 							<form method="post" action="<?= base_url('data/rakproses');?>">
 								<div class="form-group">
-								<label for="">Nama Rak / Lokasi</label>
+								<label for="">Nama Genre / Lokasi</label>
 								<input type="text" name="rak"  value="<?=$rak->nama_rak;?>" id="rak" class="form-control" placeholder="Contoh : Rak Buku 1" >
 								
 								</div>
@@ -40,7 +40,7 @@
 
 							<form method="post" action="<?= base_url('data/rakproses');?>">
 								<div class="form-group">
-								<label for="">Nama Rak / Lokasi</label>
+								<label for="">Nama 	Genre / Lokasi</label>
 								<input type="text" name="rak" id="rak" class="form-control" placeholder="Contoh : Rak Buku 1" >
 								
 								</div>
@@ -63,7 +63,7 @@
 								<thead>
 									<tr>
 										<th>No</th>
-										<th>Rak Buku</th>
+										<th>Genre Buku</th>
 										<th>Aksi</th>
 									</tr>
 								</thead>

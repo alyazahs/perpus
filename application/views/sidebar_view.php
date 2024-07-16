@@ -75,7 +75,7 @@
                     </li>
                     <li class=" <?php if($this->uri->uri_string() == 'data/rak'){ echo 'active';}?>">
                         <a href="<?php echo base_url("data/rak");?>" class="cursor">
-                            <span class="fa fa-list"></span> Rak
+                            <span class="fa fa-list"></span> Genre
                             
                         </a>
                     </li>
