@@ -1,4 +1,3 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +7,6 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="shortcut icon" href="" />
   <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/bower_components/bootstrap/dist/css/bootstrap.min.css');?>">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/bower_components/font-awesome/css/font-awesome.min.css');?>">
@@ -19,40 +17,71 @@
   <link rel="stylesheet" href="<?php echo base_url('assets_style/assets/dist/css/responsivelogin.css');?>">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
   <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"><style type="text/css">
-        .navbar-inverse{
-        background-color:#333;
-         }
-         .navbar-color{
-        color:#fff;
-         }
-          blink, .blink {
-                animation: blinker 3s linear infinite;
-            }
-
-           @keyframes blinker {
-                50% { opacity: 0; }
-           }
-    </style>
-  </head>
-<body class="hold-transition login-page" style="overflow-y: hidden;background:url(
-	'<?php echo base_url('assets_style/image/Buku-2.jpg');?>')no-repeat;background-size:100%;">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style type="text/css">
+        .navbar-inverse {
+            background-color: #333;
+        }
+        .navbar-color {
+            color: #fff;
+        }
+        blink, .blink {
+            animation: blinker 3s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+        .login-box {
+            width: 400px;
+            margin: 10% auto; /* Membuat margin atas dan bawah 10% */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.7); /* Transparansi di sini */
+            color: #ffffff; /* warna teks putih */
+        }
+        .login-box-body {
+            border: 2px solid #226bbf;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgba(34, 107, 191, 0.1);
+        }
+        .login-logo {
+            text-align: center;
+            margin-bottom: 5px; /* Mengurangi margin bawah */
+        }
+        .login-logo a {
+            color: #ffffff; /* White color */
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            font-size: 34px; /* Ukuran teks */
+            font-weight: bold; /* Membuat teks tebal */
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .btn-primary {
+            border-radius: 10px;
+            width: 100%;
+        }
+  </style>
+</head>
+<body class="hold-transition login-page" style="overflow-y: hidden; background: url('<?php echo base_url('assets_style/image/Buku-2.jpg');?>') no-repeat; background-size: 100%;">
+<div class="login-logo">
+    <a href="index.php">Selamat Datang <br/><b>Perputakaan Kota Madiun</b></a>
+</div>
 <div class="login-box">
-	<br/>
-  <div class="login-logo">
-    <a href="index.php" style="color: yellow;">Sistem Informasi <br/><b>Perpustakaan</b></a>
-  </div>
-  <div id="tampilalert"></div>
-  <!-- /.login-logo -->
-  <div class="login-box-body" style="border:2px solid #226bbf;">
-    <p class="login-box-msg" style="font-size:16px;"></p>
+  <div class="login-box-body">
+    <div id="tampilalert"></div>
+    <!-- /.login-logo -->
+    <p class="login-box-msg" style="font-size: 16px;"></p>
     <form action="<?= base_url('login/auth');?>" method="POST">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Username" id="user" name="user" required="required" autocomplete="off">
@@ -63,20 +92,13 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-        <!-- /.col
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox" name="remember" id="remember" value="R1"> Remember Me
-            </label>
-          </div>-->
-          <!-- /.social-auth-links -->
-        </div>
-        <div class="col-xs-4">
-          <button type="submit" id="loding" class="btn btn-primary btn-block btn-flat">Sign In</button>
+        <div class="col-xs-12">
+          <button type="submit" id="loding" class="btn btn-primary btn-block btn-flat">Login</button>
           <div id="loadingcuy"></div>
         </div>
+      </div>
     </form>
+  </div>
 </div>
 <!-- /.login-box -->
 <!-- Response Ajax -->
