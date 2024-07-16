@@ -358,7 +358,7 @@ class Data extends CI_Controller {
 			}
 		}
 
-        $this->data['title_web'] = 'Data Rak Buku ';
+        $this->data['title_web'] = 'Data Genre Buku';
         $this->load->view('header_view',$this->data);
         $this->load->view('sidebar_view',$this->data);
         $this->load->view('rak/rak_view',$this->data);

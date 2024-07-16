@@ -40,13 +40,13 @@
 
 							<form method="post" action="<?= base_url('data/rakproses');?>">
 								<div class="form-group">
-								<label for="">Nama 	Genre / Lokasi</label>
+								<label for="">Nama Genre</label>
 								<input type="text" name="rak" id="rak" class="form-control" placeholder="Contoh : Rak Buku 1" >
 								
 								</div>
 								<br/>
 								<input type="hidden" name="tambah" value="tambah">
-								<button type="submit" class="btn btn-primary"> <i class="fa fa-plus"></i> Tambah Rak</button>
+								<button type="submit" class="btn btn-primary"> <i class="fa fa-plus"></i>Tambah Genre</button>
 							</form>
 							<?php }?>
 						</div>
