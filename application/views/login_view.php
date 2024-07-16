@@ -39,7 +39,8 @@
         }
         .login-box {
             width: 400px;
-            margin: 10% auto; /* Membuat margin atas dan bawah 10% */
+            margin-bottom: 10% auto; /* Membuat margin atas dan bawah 10% */
+            margin-top: 20px;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -63,6 +64,7 @@
             width: 100%;
             font-size: 34px; /* Ukuran teks */
             font-weight: bold; /* Membuat teks tebal */
+            margin-top: 110px;
         }
         .form-control {
             border-radius: 10px;
@@ -75,7 +77,8 @@
 </head>
 <body class="hold-transition login-page" style="overflow-y: hidden; background: url('<?php echo base_url('assets_style/image/Buku-2.jpg');?>') no-repeat; background-size: 100%;">
 <div class="login-logo">
-    <a href="index.php">Selamat Datang <br/><b>Perputakaan Kota Madiun</b></a>
+    <a href="index.php"">Selamat Datang <br/>
+    <b>Perputakaan Kota Madiun</b></a>
 </div>
 <div class="login-box">
   <div class="login-box-body">
