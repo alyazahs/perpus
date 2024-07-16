@@ -81,7 +81,7 @@
               Welcome , <i class="fa fa-edit"> </i> <?php echo $d->nama; echo ' | ( '.$d->level.' )'; ?></a>
           </li>
           <li>
-            <a href="<?php echo base_url();?>login/logout">Sign out</a>
+            <a href="<?php echo base_url();?>login">Sign out</a>
           </li>
           <!-- Control Sidebar Toggle Button 
           <li>
