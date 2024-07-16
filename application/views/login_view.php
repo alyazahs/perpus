@@ -76,17 +76,7 @@
           <button type="submit" id="loding" class="btn btn-primary btn-block btn-flat">Sign In</button>
           <div id="loadingcuy"></div>
         </div>
-        <!-- /.col -->
-      </div>
     </form>
-  </div>
-  <!-- /.login-box-body -->
-  <br/>
-  <footer>
-    <div class="login-box-body text-center bg-blue">
-       <a style="color: yellow;"> Copyright &copy; Sistem Perpustakaan Codekop - <?php echo date("Y");?>
-    </div>
-  </footer>
 </div>
 <!-- /.login-box -->
 <!-- Response Ajax -->
